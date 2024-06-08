@@ -13,7 +13,7 @@ int main(){
 
 
     //restricting columns and rows to be less or equal to 3
-    while (rows >3 and columns >3)
+    while (rows <=3 && columns <=3)
     {
         cout << "Enter number of rows <=3: ";
         cin >> rows;
@@ -48,9 +48,10 @@ int main(){
     //deleting the arrays
     for (int i = 0; i < rows; i++)
         delete[] pArrays[i];
-    delete[] pArrays;
+    
 
     // freeing the arrays that hold all arrays
+    delete[] pArrays;
     pArrays = NULL;
 
     //end of program
