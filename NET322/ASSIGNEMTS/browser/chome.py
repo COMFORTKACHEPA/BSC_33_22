@@ -21,15 +21,15 @@ class MainWindow(QMainWindow):
         self.addToolBar(self.nav_bar)
 
         #back
-        self.back_btn = QAction('Back', self)
+        self.back_btn = QAction(QIcon('icons8-back-48.png'),'Back', self)
         self.back_btn.triggered.connect(self.browser.back)
         self.nav_bar.addAction(self.back_btn)
         #forwad
-        self.forward_btn = QAction('Forward', self)
+        self.forward_btn = QAction(QIcon('icons8-forward-48.png'),'Forward', self)
         self.forward_btn.triggered.connect(self.browser.forward)
         self.nav_bar.addAction(self.forward_btn)
         #reload
-        self.reload_btn = QAction('Reload', self)
+        self.reload_btn = QAction(QIcon('icons8-reload-50.png'),'Reload', self)
         self.reload_btn.triggered.connect(self.browser.reload)
         self.nav_bar.addAction(self.reload_btn)
 
